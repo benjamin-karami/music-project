@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
-import heroImage from '@/public/assets/images/banner.png'
+import homeBg from '@/public/assets/images/homeBg.webp';
 
 const Hero = () => {
     return (
-        <div className='w-full h-[400px]'>
-            <Image className='w-full h-[400px]' src={heroImage} alt='hero' />
+        <div className='max-w-[800px] w-full absolute bottom-0 left-0'>
+            <Image className='w-full scale-x-[-1]' src={homeBg} alt='hero' />
         </div>
     )
 }

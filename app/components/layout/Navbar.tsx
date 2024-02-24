@@ -3,6 +3,7 @@
 import React from 'react';
 import useScroll from '@/app/lib/hooks/useScroll';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const menus = [
   { id: 1, title: 'خانه', path: '/' },
@@ -13,6 +14,9 @@ const menus = [
 
 const Navbar = () => {
   const scrolled = useScroll(0);
+  const pathname = usePathname();
+
+  if (pathname === '/') return null;
 
   return (
     <div

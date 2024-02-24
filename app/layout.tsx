@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from '@/app/components/layout/Navbar'
+import Navbar from '@/app/components/layout/Navbar';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className='bg-gradient-to-br from-indigo-50 via-white to-cyan-100'>
+      <body>
         <Navbar />
         {children}
       </body>

@@ -5,9 +5,25 @@
 :root {
 }
 
+@font-face {
+  font-family: BNazanin;
+  src: url('../public/assets/fonts/B-NAZANIN.TTF');
+}
+@font-face {
+  font-family: Nastaligh;
+  src: url('../public/assets/fonts/Nastaligh.ttf');
+}
+
 body {
+  font-family: BNazanin;
   direction: rtl;
   padding-top: 65px;
   max-width: 1024;
   margin: auto;
+  position: relative;
+  height: 100vh;
+}
+
+.nastaligh {
+  font-family: Nastaligh;
 }
